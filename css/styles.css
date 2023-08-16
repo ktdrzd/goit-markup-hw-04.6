@@ -120,6 +120,29 @@ body {
     color: #404BBF;
 }
 
+.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+    background-color: #404BBF;
+}
+
+.header-menu-link:hover::after,
+.header-menu-link:active::after,
+.header-menu-link:focus::after {
+    background-color: #404BBF;
+    color: #404BBF;
+}
+
 /*First Section*/
 
 .hero {
